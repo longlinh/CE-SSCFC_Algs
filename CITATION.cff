@@ -29,7 +29,7 @@ keywords:
 license: MIT
 version: 1.0.0
 date-released: "2026-09-04"
-# doi: 10.5281/zenodo.XXXXXXX   # concept DOI, filled in after the first Zenodo release
+doi: 10.5281/zenodo.22305371
 preferred-citation:
   type: article
   title: >-

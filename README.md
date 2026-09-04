@@ -1,5 +1,9 @@
 # CE-SSCFC — reference implementation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22305371.svg)](https://doi.org/10.5281/zenodo.22305371)
+
+**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372). Licence MIT.
+
 Companion source code for the manuscript
 
 > **Classifier-embedded semi-supervised collaborative fuzzy clustering with
@@ -182,4 +186,4 @@ runs lives in the authors' `ds` library; this repository keeps the CPU float64 p
 }
 ```
 
-See also [CITATION.cff](CITATION.cff). License: MIT.
+Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.0, Zenodo, 2026, doi:10.5281/zenodo.22305372. See also [CITATION.cff](CITATION.cff). License: MIT.
