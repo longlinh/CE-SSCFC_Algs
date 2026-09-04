@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering"
+message: >-
+  If you use this software, please cite both the software itself and the
+  accompanying paper listed under preferred-citation.
+type: software
+authors:
+  - family-names: Nguyen
+    given-names: Xuan Hoang
+    orcid: https://orcid.org/0009-0007-1721-6931
+    affiliation: Hanoi University of Industry, Hanoi, Vietnam
+repository-code: https://github.com/longlinh/CE-SSCFC_Algs
+abstract: >-
+  NumPy reference implementation of CE-SSCFC, a semi-supervised collaborative
+  fuzzy c-means in which a ridge classifier on a fixed quadratic feature map is
+  an optimisation variable of the clustering objective and the only channel of
+  collaboration between datasites is the exchange of per-class sufficient
+  statistics of the labelled pixels. Includes the validation gate, the
+  backtracking rule on the local validation risk, a self-contained synthetic
+  multi-datasite demonstration, tests and an example on the companion
+  Landsat-8 dataset (doi:10.5281/zenodo.22304965).
+keywords:
+  - fuzzy c-means
+  - semi-supervised clustering
+  - collaborative clustering
+  - remote sensing
+  - land cover
+  - Landsat-8
+license: MIT
+version: 1.0.0
+date-released: "2026-09-04"
+# doi: 10.5281/zenodo.XXXXXXX   # concept DOI, filled in after the first Zenodo release
+preferred-citation:
+  type: article
+  title: >-
+    Classifier-embedded semi-supervised collaborative fuzzy clustering with
+    validation-gated knowledge transfer for multi-region land-cover classification
+  authors:
+    - family-names: Nguyen
+      given-names: Xuan Hoang
+    - family-names: Vuong
+      given-names: Quoc Binh
+    - family-names: Tran
+      given-names: Viet Ha
+    - family-names: Nguyen
+      given-names: Chien Thang
+    - family-names: Hoang
+      given-names: Thang Long
+  journal: Neurocomputing
+  year: 2026
+  notes: Under review. DOI to be assigned on acceptance.
