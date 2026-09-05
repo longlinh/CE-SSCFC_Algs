@@ -34,7 +34,7 @@ preferred-citation:
   type: article
   title: >-
     Classifier-embedded semi-supervised collaborative fuzzy clustering with
-    validation-gated knowledge transfer for multi-region land-cover classification
+    validation-gated knowledge transfer for land-cover mapping across regions
   authors:
     - family-names: Nguyen
       given-names: Xuan Hoang

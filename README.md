@@ -7,7 +7,7 @@
 Companion source code for the manuscript
 
 > **Classifier-embedded semi-supervised collaborative fuzzy clustering with
-> validation-gated knowledge transfer for multi-region land-cover classification.**
+> validation-gated knowledge transfer for land-cover mapping across regions.**
 > Xuan Hoang Nguyen, Quoc Binh Vuong, Viet Ha Tran, Chien Thang Nguyen, Thang Long Hoang.
 > Submitted to *Neurocomputing* (under review, 2026).
 
@@ -178,7 +178,7 @@ runs lives in the authors' `ds` library; this repository keeps the CPU float64 p
 ```bibtex
 @article{nguyen2026cesscfc,
   title   = {Classifier-embedded semi-supervised collaborative fuzzy clustering with
-             validation-gated knowledge transfer for multi-region land-cover classification},
+             validation-gated knowledge transfer for land-cover mapping across regions},
   author  = {Nguyen, Xuan Hoang and Vuong, Quoc Binh and Tran, Viet Ha and Nguyen, Chien Thang and Hoang, Thang Long},
   journal = {Neurocomputing},
   year    = {2026},
