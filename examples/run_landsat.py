@@ -5,10 +5,12 @@ test accuracy per datasite together with the opened gates.
 
     python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set vn3
     python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set es2 --seed 43
+    python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set vn3c         # confirmatory set
 
 Protocol (Sec. 4.3 of the paper): class-pure circular labelled regions sampled from the
-reference map (VN3: 10 / 14 / 24 regions per class, radius 30 px; ES2: Valencia 16 x r30,
-Alicante 12 x r15), 32 x 32 spatial block hold-out of ~30 % as the test set, 20 % of the
+reference map (VN3: 10 / 14 / 24 regions per class, radius 30 px; VN3C, the confirmatory
+set of Sec. 4.11 with the held-out site Hai Phong in place of Hanoi: 10 / 14 / 24, radius 30 px,
+dataset v1.1.0; ES2: Valencia 16 x r30, Alicante 12 x r15), 32 x 32 spatial block hold-out of ~30 % as the test set, 20 % of the
 labelled regions per class held out as whole regions for the validation gate, per-datasite
 z-scoring.  The region sampler here is a compact re-implementation of the authors'
 loader, so the numbers reproduce the paper's tables in distribution, not bit for bit.
@@ -32,6 +34,9 @@ SETS = {
     "vn3": dict(sites=["hn", "th2", "hcm2"], bands=(2, 3, 4, 5), gt="WorldCover2021_5class",
                 C=5, n_regions={"hn": 10, "th2": 14, "hcm2": 24}, radius={"hn": 30, "th2": 30, "hcm2": 30},
                 m=3.0, alpha=32.0),
+    "vn3c": dict(sites=["hp", "th2", "hcm2"], bands=(2, 3, 4, 5), gt="WorldCover2021_5class",
+                 C=5, n_regions={"hp": 10, "th2": 14, "hcm2": 24}, radius={"hp": 30, "th2": 30, "hcm2": 30},
+                 m=3.0, alpha=32.0),
     "es2": dict(sites=["valencia", "alicante"], bands=(2, 3, 4, 5, 6, 7), gt="WorldCover2021_6class",
                 C=6, n_regions={"valencia": 16, "alicante": 12}, radius={"valencia": 30, "alicante": 15},
                 m=2.0, alpha=8.0),

@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22305371.svg)](https://doi.org/10.5281/zenodo.22305371)
 
-**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372). Licence MIT.
+**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions); version 1.0.1 DOI [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX) (v1.0.0: [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372)). Licence MIT.
 
 Companion source code for the manuscript
 
@@ -122,8 +122,9 @@ a random-pixel split leaks spatial context into the gate and switches it off
 
 ## Running on the companion Landsat-8 dataset
 
-The five Landsat-8 scenes of the paper (Hanoi, Thanh Hoa, Ho Chi Minh City; Valencia,
-Alicante) with their WorldCover-derived reference maps are released separately:
+The six Landsat-8 scenes of the paper (Hanoi, Thanh Hoa, Ho Chi Minh City and the held-out
+confirmatory site Hai Phong, added in dataset v1.1.0; Valencia, Alicante) with their
+WorldCover-derived reference maps are released separately:
 <https://github.com/longlinh/CE-SSCFC_Dataset>, archived at
 [doi:10.5281/zenodo.22304965](https://doi.org/10.5281/zenodo.22304965) (CC BY 4.0).
 
@@ -131,7 +132,11 @@ Alicante) with their WorldCover-derived reference maps are released separately:
 pip install rasterio
 python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set vn3          # m=3, α=32
 python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set es2 --seed 43 # m=2, α=8
+python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set vn3c         # confirmatory set {HP, TH, HCM}
 ```
+
+`--set vn3c` runs the pre-registered confirmatory protocol of the revised paper (Sec. 4.11): the
+held-out site Hai Phong takes the role of Hanoi, and every parameter is the VN3 value.
 
 The example samples class-pure circular labelled regions, a 32 × 32 block test hold-out
 and a whole-region validation split with the paper's settings, then prints `R_val` and the
@@ -186,4 +191,9 @@ runs lives in the authors' `ds` library; this repository keeps the CPU float64 p
 }
 ```
 
-Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.0, Zenodo, 2026, doi:10.5281/zenodo.22305372. See also [CITATION.cff](CITATION.cff). License: MIT.
+Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.1, Zenodo, 2026, doi:10.5281/zenodo.XXXXXXX. See also [CITATION.cff](CITATION.cff). License: MIT.
+
+## Changelog
+
+- **1.0.1 (2026-09-20)** — example gains `--set vn3c`, the confirmatory set of the revised paper (held-out site Hai Phong, dataset v1.1.0). The algorithm, tests and API are unchanged.
+- **1.0.0 (2026-09-04)** — initial release accompanying the submitted manuscript.
