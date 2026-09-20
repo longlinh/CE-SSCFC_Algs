@@ -1,7 +1,7 @@
 {
   "title": "CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering with validation-gated knowledge transfer",
   "upload_type": "software",
-  "description": "<p>NumPy-only reference implementation of CE-SSCFC (classifier-embedded semi-supervised collaborative fuzzy clustering). A ridge classifier on a fixed quadratic feature map is an optimisation variable of the fuzzy clustering objective; datasites collaborate only through per-class sufficient statistics of their labelled pixels (G_k, h_k, n_k), transferred through a validation gate and accepted by a backtracking rule that keeps the local validation risk non-increasing (Theorem 2 of the paper). The repository contains the algorithm (closed-form U/V/W updates, Phase 1, gating, Phase 2), evaluation metrics, a self-contained synthetic multi-datasite demonstration, tests, and an example that runs the paper's protocol on the companion Landsat-8 dataset (doi:10.5281/zenodo.22304965), including the pre-registered confirmatory set of the revised manuscript (held-out site Hai Phong, dataset v1.1.0; version 1.0.1).</p><p>Companion code of: X. H. Nguyen, Q. B. Vuong, V. H. Tran, C. T. Nguyen, T. L. Hoang, <i>Classifier-embedded semi-supervised collaborative fuzzy clustering with validation-gated knowledge transfer for land-cover mapping across regions</i>, submitted to Neurocomputing (2026).</p>",
+  "description": "<p>NumPy-only reference implementation of CE-SSCFC (classifier-embedded semi-supervised collaborative fuzzy clustering). A ridge classifier on a fixed quadratic feature map is an optimisation variable of the fuzzy clustering objective; datasites collaborate only through per-class sufficient statistics of their labelled pixels (G_k, h_k, n_k), transferred through a validation gate and accepted by a backtracking rule that keeps the local validation risk non-increasing (Theorem 2 of the paper). The repository contains the algorithm (closed-form U/V/W updates, Phase 1, gating, Phase 2), evaluation metrics, a self-contained synthetic multi-datasite demonstration, tests, and an example that runs the paper's protocol on the companion Landsat-8 dataset (doi:10.5281/zenodo.22304965), including the pre-registered confirmatory set of the revised manuscript (held-out site Hai Phong, dataset v1.1.0).</p><p>Companion code of: X. H. Nguyen, Q. B. Vuong, V. H. Tran, C. T. Nguyen, T. L. Hoang, <i>Classifier-embedded semi-supervised collaborative fuzzy clustering with validation-gated knowledge transfer for land-cover mapping across regions</i>, submitted to Neurocomputing (2026).</p>",
   "creators": [
     {
       "name": "Nguyen, Xuan Hoang",
@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "access_right": "open",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "keywords": ["fuzzy c-means", "semi-supervised clustering", "collaborative clustering", "remote sensing", "land cover", "Landsat-8", "NumPy"],
   "related_identifiers": [
     {"identifier": "10.5281/zenodo.22304965", "relation": "references", "resource_type": "dataset"}
