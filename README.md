@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22305371.svg)](https://doi.org/10.5281/zenodo.22305371)
 
-**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions, resolves to the latest); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372) (original submission). Licence MIT.
+**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions, resolves to the latest); version 1.0.1 DOI [10.5281/zenodo.23055911](https://doi.org/10.5281/zenodo.23055911) (revised manuscript); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372) (original submission). Licence MIT.
 
 Companion source code for the manuscript
 
@@ -191,7 +191,7 @@ runs lives in the authors' `ds` library; this repository keeps the CPU float64 p
 }
 ```
 
-Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.1, Zenodo, 2026, doi:10.5281/zenodo.22305371 (concept DOI; the version DOI is listed on the Zenodo record). See also [CITATION.cff](CITATION.cff). License: MIT.
+Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.1, Zenodo, 2026, doi:10.5281/zenodo.23055911. See also [CITATION.cff](CITATION.cff). License: MIT.
 
 ## Changelog
 
