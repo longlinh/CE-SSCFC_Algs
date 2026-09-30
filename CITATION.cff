@@ -27,8 +27,8 @@ keywords:
   - land cover
   - Landsat-8
 license: MIT
-version: 1.0.0
-date-released: "2026-09-04"
+version: 1.0.1
+date-released: "2026-09-30"
 doi: 10.5281/zenodo.22305371
 preferred-citation:
   type: article

@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22305371.svg)](https://doi.org/10.5281/zenodo.22305371)
 
-**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372). Licence MIT.
+**Archived on Zenodo:** concept DOI [10.5281/zenodo.22305371](https://doi.org/10.5281/zenodo.22305371) (all versions, resolves to the latest); version 1.0.0 DOI [10.5281/zenodo.22305372](https://doi.org/10.5281/zenodo.22305372) (original submission). Licence MIT.
 
 Companion source code for the manuscript
 
@@ -135,7 +135,7 @@ python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set es2 -
 python examples/run_landsat.py --data-root /path/to/CE-SSCFC_Dataset --set vn3c         # confirmatory set {HP, TH, HCM}
 ```
 
-`--set vn3c` runs the pre-registered confirmatory protocol of the revised paper (Sec. 4.11): the
+`--set vn3c` runs the confirmatory protocol of the revised paper (Sec. 4.11): the
 held-out site Hai Phong takes the role of Hanoi, and every parameter is the VN3 value.
 
 The example samples class-pure circular labelled regions, a 32 × 32 block test hold-out
@@ -191,9 +191,9 @@ runs lives in the authors' `ds` library; this repository keeps the CPU float64 p
 }
 ```
 
-Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.0, Zenodo, 2026, doi:10.5281/zenodo.22305372. See also [CITATION.cff](CITATION.cff). License: MIT.
+Software citation: X. H. Nguyen, *CE-SSCFC_Algs: reference implementation of classifier-embedded semi-supervised collaborative fuzzy clustering*, version 1.0.1, Zenodo, 2026, doi:10.5281/zenodo.22305371 (concept DOI; the version DOI is listed on the Zenodo record). See also [CITATION.cff](CITATION.cff). License: MIT.
 
 ## Changelog
 
 - **1.0.0 (2026-09-04)** — archived release accompanying the manuscript; the algorithm, tests and API are unchanged since.
-- **2026-09-20 (main, not re-archived)** — `examples/run_landsat.py` gains `--set vn3c`, the confirmatory set of the revised manuscript (held-out site Hai Phong, dataset v1.1.0). Example configuration only.
+- **1.0.1 (2026-09-30)** — archived release accompanying the revised manuscript: `examples/run_landsat.py` gains `--set vn3c`, the confirmatory set of Sec. 4.11 (held-out site Hai Phong, dataset v1.1.0). Example configuration only; the algorithm, tests and API are unchanged from 1.0.0.
